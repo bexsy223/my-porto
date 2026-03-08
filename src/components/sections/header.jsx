@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { RiShakeHandsLine } from '@remixicon/react'
 import { menuList } from '@/utlits/fackData/menuList'
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 
 const Header = () => {
     const pathName = usePathname()
@@ -38,7 +39,7 @@ const Header = () => {
                         <div className="logo-outer">
                             <div className="logo">
                                 <Link href="/">
-                                    <Image width={120} height={40} sizes='100vw' src={"/images/irfan.png"} alt="Logo" title="Logo" />
+                                    <Image width={120} height={40} sizes='100vw' src={prefixPath("/images/irfan.png")} alt="Logo" title="Logo" />
                                 </Link>
                             </div>
                         </div>
@@ -50,7 +51,7 @@ const Header = () => {
                                 <div className="navbar-header">
                                     <div className="mobile-logo">
                                         <Link href="/">
-                                            <Image width={75} height={25} sizes='100vw' src={"/images/irfan.png"} alt="Logo" title="Logo" />
+                                            <Image width={75} height={25} sizes='100vw' src={prefixPath("/images/irfan.png")} alt="Logo" title="Logo" />
                                         </Link>
                                     </div>
                                     {/* <!-- Toggle Button --> */}

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import React from 'react'
 
 const Kalender = () => {
@@ -36,7 +37,7 @@ const Kalender = () => {
           height={1072}
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
-          src={"/images/projects/Kalender/Kalender.jpg"}
+          src={prefixPath("/images/projects/Kalender/Kalender.jpg")}
           alt="image"
         />
       </div>
@@ -82,7 +83,7 @@ const Kalender = () => {
                   height={800}
                   sizes="100%"
                   style={{ width: "100%", height: "auto" }}
-                  src={src}
+                  src={prefixPath(src)}
                   alt="gallery"
                 />
               </div>

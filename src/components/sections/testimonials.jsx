@@ -11,6 +11,7 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react';
 import { testimonialsData } from '@/utlits/fackData/testimonialsData';
 import SlideUp from '@/utlits/animations/slideUp';
 import Image from 'next/image';
+import { prefixPath } from '@/utlits/prefixPath';
 
 
 const Testimonials = () => {
@@ -50,7 +51,7 @@ const Testimonials = () => {
                                 }
                                 modules={[Navigation]}
                             >
-                                {testimonialsData.map(({ id, name, position, review, src }) => <SwiperSlide key={id} > <Card img={src} name={name} position={position} review={review} /> </SwiperSlide>)}
+                                {testimonialsData.map(({ id, name, position, review, src }) => <SwiperSlide key={id} > <Card img={prefixPath(src)} name={name} position={position} review={review} /> </SwiperSlide>)}
                             </Swiper>
                             <SlideUp>
                                 <div className="slider-arrows text-center pt-40">

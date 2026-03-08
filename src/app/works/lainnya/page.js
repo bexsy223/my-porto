@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import React from 'react'
 
 const Lainnya = () => {
@@ -30,7 +31,7 @@ const Lainnya = () => {
           height={1072}
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
-          src={"/images/projects/other.jpg"}
+          src={prefixPath("/images/projects/other.jpg")}
           alt="image"
         />
       </div>
@@ -73,7 +74,7 @@ const Lainnya = () => {
                 className={`single-image wow fadeInUp ${delays[i % delays.length]}`}
                 style={{ position: "relative", width: "100%", paddingTop: "133.33%" }}
               >
-                <Image fill sizes="100%" style={{ objectFit: "cover" }} src={src} alt="gallery" />
+                <Image fill sizes="100%" style={{ objectFit: "cover" }} src={prefixPath(src)} alt="gallery" />
               </div>
             </div>
           ))}
@@ -85,7 +86,7 @@ const Lainnya = () => {
                 className={`single-image wow fadeInUp ${delays[i % delays.length]}`}
                 style={{ position: "relative", width: "100%", paddingTop: "56.25%" }}
               >
-                <Image fill sizes="100%" style={{ objectFit: "cover" }} src={src} alt="gallery" />
+                <Image fill sizes="100%" style={{ objectFit: "cover" }} src={prefixPath(src)} alt="gallery" />
               </div>
             </div>
           ))}

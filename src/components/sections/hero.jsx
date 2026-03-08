@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import Link from 'next/link';
 import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
 import PartnersMarquee from './partnersMarquee';
@@ -15,7 +16,7 @@ const Hero = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={"/images/about/irfan1.jpg"} alt="About Me" />
+                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={prefixPath("/images/about/irfan1.jpg")} alt="About Me" />
                                 <h2>Irfan Hafizh</h2>
                                 <p>I am a Web Developer and Ghrapic Designer.</p>
                                 <div className="about-social text-center">

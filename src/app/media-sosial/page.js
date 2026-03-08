@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import React from 'react'
 
 const MediaSosial = () => {
@@ -31,7 +32,7 @@ const MediaSosial = () => {
                 </div>
             </div>
             <div className="single-project-image">
-                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={"/images/projects/sosial-media(2).jpg"} alt="image" />
+                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={prefixPath("/images/projects/sosial-media(2).jpg")} alt="image" />
             </div>
             <div className="container pt-30">
                 <div className="row">
@@ -68,7 +69,7 @@ const MediaSosial = () => {
                     {galleryImages.map((src, i) => (
                         <div key={src} className="col-lg-4">
                             <div className={`single-image wow fadeInUp ${delays[i % delays.length]}`}>
-                                <Image width={1080} height={1350} sizes='100%' style={{width:"100%", height:"auto"}} src={src} alt="gallery" />
+                                <Image width={1080} height={1350} sizes='100%' style={{width:"100%", height:"auto"}} src={prefixPath(src)} alt="gallery" />
                             </div>
                         </div>
                     ))}

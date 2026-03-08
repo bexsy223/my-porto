@@ -2,6 +2,7 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 import { projectsData } from "@/utlits/fackData/projectData"
 import React from "react"
+import { prefixPath } from "@/utlits/prefixPath"
 
 export const dynamicParams = false
 
@@ -35,7 +36,7 @@ export default function WorkDetails({ params }) {
     "poster-flyer": ["/images/projects/flyer.jpg"],
   }
 
-  const galleryImages = galleries[slug] ?? [project.src]
+  const galleryImages = (galleries[slug] ?? [project.src]).map(prefixPath)
   const delays = ["delay-0-2s", "delay-0-4s", "delay-0-6s", "delay-0-8s"]
 
   return (
@@ -54,7 +55,7 @@ export default function WorkDetails({ params }) {
           height={1072}
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
-          src={project.src}
+          src={prefixPath(project.src)}
           alt="image"
         />
       </div>

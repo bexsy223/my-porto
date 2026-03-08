@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import React from 'react'
 
 const BannerSpanduk = () => {
@@ -25,7 +26,7 @@ const BannerSpanduk = () => {
                 </div>
             </div>
             <div className="single-project-image">
-                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={"/images/projects/spanduk.jpg"} alt="image" />
+                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={prefixPath("/images/projects/spanduk.jpg")} alt="image" />
             </div>
             <div className="container pt-30">
                 <div className="row">
@@ -62,7 +63,7 @@ const BannerSpanduk = () => {
                     {galleryImages.map((src, i) => (
                         <div key={src} className="col-lg-6 col-md-6">
                             <div className={`single-image wow fadeInUp ${delays[i % delays.length]}`}>
-                                <Image width={1600} height={900} sizes='(min-width: 992px) 50vw, 100vw' style={{width:"100%", height:"auto"}} src={src} alt="gallery" />
+                                <Image width={1600} height={900} sizes='(min-width: 992px) 50vw, 100vw' style={{width:"100%", height:"auto"}} src={prefixPath(src)} alt="gallery" />
                             </div>
                         </div>
                     ))}

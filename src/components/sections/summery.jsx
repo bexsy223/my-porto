@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { prefixPath } from '@/utlits/prefixPath'
 import { RiMailSendLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
 
@@ -12,7 +13,7 @@ const Summery = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={"/images/about/profile.png"} alt="About Me" />
+                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={prefixPath("/images/about/profile.png")} alt="About Me" />
                             </div>
                         </SlideUp>
                     </div>
