@@ -55,7 +55,7 @@ const BannerSpanduk = () => {
                             <h2>
                                 Deskripsi
                             </h2>
-                            <p>Halaman ini menampilkan koleksi desain banner spanduk dengan layout lebar. Tambahkan file baru ke folder projects dan daftarkan di array untuk memperluas galeri.</p>
+                            <p>Kumpulan karya pada halaman ini menampilkan desain banner spanduk yang saya kerjakan untuk berbagai keperluan acara, promosi, dan publikasi, dengan menekankan visual yang profesional dan penyampaian pesan yang efektif.</p>
                         </div>
                     </div>
                 </div>

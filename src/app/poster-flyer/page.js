@@ -30,20 +30,16 @@ const PosterFlyer = () => {
                     <div className="col-lg-4">
                         <div className="single-project-page-left wow fadeInUp delay-0-2s">
                             <div className="single-info">
-                                <p>Year</p>
-                                <h3>2024</h3>
+                                <p>Author</p>
+                                <h3>Irfan Hafizh</h3>
                             </div>
                             <div className="single-info">
-                                <p>Client</p>
-                                <h3>Bento Studio</h3>
-                            </div>
-                            <div className="single-info">
-                                <p>Services</p>
-                                <h3>Poster & Flyer Design</h3>
+                                <p>Title</p>
+                                <h3>Poster & Flyer</h3>
                             </div>
                             <div className="single-info">
                                 <p>Project</p>
-                                <h3>Creative</h3>
+                                <h3>Portofolio</h3>
                             </div>
                         </div>
                     </div>
@@ -52,7 +48,7 @@ const PosterFlyer = () => {
                             <h2>
                                 Deskripsi
                             </h2>
-                            <p>Halaman ini menampilkan desain poster & flyer. Tambahkan file baru ke folder projects dan daftarkan di array.</p>
+                            <p>Halaman ini berisi portofolio desain poster dan flyer yang saya kembangkan untuk mendukung kebutuhan promosi dan penyampaian informasi secara visual, dengan pendekatan desain yang kreatif, terstruktur, dan sesuai target audiens.</p>
                         </div>
                     </div>
                 </div>

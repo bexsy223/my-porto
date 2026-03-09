@@ -12,7 +12,7 @@ const MediaSosial = () => {
         "/images/projects/adha.jpg",
         "/images/projects/who.jpg",
         "/images/projects/ucapan.jpg",
-        "/images/projects/imlek.jpg",
+        "/images/projects/Imlek.jpg",
         "/images/projects/purnatugas.jpg",
         "/images/projects/hari.jpg",
         "/images/projects/ramadhan.jpg",
@@ -39,20 +39,16 @@ const MediaSosial = () => {
                     <div className="col-lg-4">
                         <div className="single-project-page-left wow fadeInUp delay-0-2s">
                             <div className="single-info">
-                                <p>Year</p>
-                                <h3>2024</h3>
+                                <p>Author</p>
+                                <h3>Irfan Hafizh</h3>
                             </div>
                             <div className="single-info">
-                                <p>Client</p>
-                                <h3>Bento Studio</h3>
-                            </div>
-                            <div className="single-info">
-                                <p>Services</p>
+                                <p>Title</p>
                                 <h3>Social Media Design</h3>
                             </div>
                             <div className="single-info">
                                 <p>Project</p>
-                                <h3>Creative</h3>
+                                <h3>Portofolio</h3>
                             </div>
                         </div>
                     </div>
@@ -61,7 +57,7 @@ const MediaSosial = () => {
                             <h2>
                                 Deskripsi
                             </h2>
-                            <p>Galeri desain sosial media dengan rasio 1080x1350 (4:5) dan grid 3 kolom.</p>
+                            <p>Portofolio ini menampilkan berbagai desain konten media sosial yang saya rancang berdasarkan pengalaman dalam mengelola kebutuhan visual akun Instagram himpunan selama masa perkuliahan serta pengembangan konten kreatif untuk akun pribadi saya hingga sekarang.</p>
                         </div>
                     </div>
                 </div>
