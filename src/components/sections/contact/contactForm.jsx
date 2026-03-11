@@ -1,13 +1,46 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { RiMailLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
+import { toast } from 'sonner'
 
 const ContactForm = () => {
+    const [status, setStatus] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        setStatus("sending");
+
+        try {
+            const response = await fetch("https://formspree.io/f/xlgpjyvp", {
+                method: "POST",
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setStatus("SUCCESS");
+                toast.success("Pesan berhasil dikirim! Terima kasih.");
+                form.reset();
+            } else {
+                setStatus("ERROR");
+                toast.error("Oops! Terjadi kesalahan. Silakan coba lagi.");
+            }
+        } catch (error) {
+            setStatus("ERROR");
+            toast.error("Oops! Terjadi kesalahan. Silakan coba lagi.");
+        }
+    };
+
     return (
         <div className="col-lg-8">
             <SlideUp>
                 <div className="contact-form contact-form-area">
-                    <form className="contactForm" >
+                    <form className="contactForm" onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
@@ -34,10 +67,9 @@ const ContactForm = () => {
                             </div>
                             <div className="col-md-12">
                                 <div className="form-group mb-0">
-                                    <button type="submit" className="theme-btn">
-                                        Send Me Message <i><RiMailLine size={15} /></i>
+                                    <button type="submit" className="theme-btn" disabled={status === "sending"}>
+                                        {status === "sending" ? "Sending..." : "Send Me Message"} <i><RiMailLine size={15} /></i>
                                     </button>
-                                    <div id="msgSubmit" className="hidden"></div>
                                 </div>
                             </div>
                         </div>

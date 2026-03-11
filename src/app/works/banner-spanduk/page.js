@@ -32,21 +32,17 @@ const BannerSpanduk = () => {
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="single-project-page-left wow fadeInUp delay-0-2s">
-                            <div className="single-info">
-                                <p>Year</p>
-                                <h3>2024</h3>
+                           <div className="single-info">
+                                <p>Author</p>
+                                <h3>Irfan Hafizh</h3>
                             </div>
                             <div className="single-info">
-                                <p>Client</p>
-                                <h3>Bento Studio</h3>
-                            </div>
-                            <div className="single-info">
-                                <p>Services</p>
-                                <h3>Banner Spanduk Design</h3>
+                                <p>Title</p>
+                                <h3>Banner Spanduk</h3>
                             </div>
                             <div className="single-info">
                                 <p>Project</p>
-                                <h3>Creative</h3>
+                                <h3>Portofolio</h3>
                             </div>
                         </div>
                     </div>

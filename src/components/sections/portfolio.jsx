@@ -70,7 +70,7 @@ export default Portfolio
 
 
 const Card = ({ category, title, src, animationClass, id, slug }) => {
-    const targetHref = id === 1 ? "/media-sosial" : id === 2 ? "/poster-flyer" : id === 3 ? "/banner" : id === 4 ? "/banner-spanduk" : (slug ? `/works/${slug}` : "/media-sosial")
+    const targetHref = id === 1 ? "/works/media-sosial" : id === 2 ? "/works/poster-flyer" : id === 3 ? "/works/banner" : id === 4 ? "/works/banner-spanduk" : (slug ? `/works/${slug}` : "/works/media-sosial")
     return (
         <div className={`col-lg-4 col-md-6 item branding game ${animationClass}`}>
             <SlideUp delay={id}>

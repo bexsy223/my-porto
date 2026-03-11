@@ -4,6 +4,7 @@ import BootstrapForBrowser from "@/components/ui/bootstrapForBrowser";
 import Header from "@/components/sections/header";
 import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/sections/footer";
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "Bentos - Personal Portfolio Next.js Template",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning>
+        <Toaster position="bottom-right" richColors />
         <BootstrapForBrowser />
         <Preloader />
         <Header />
