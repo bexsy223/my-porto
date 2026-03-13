@@ -25,7 +25,7 @@ export default function WorkDetails({ params }) {
       "/images/projects/adha.jpg",
       "/images/projects/who.jpg",
       "/images/projects/ucapan.jpg",
-      "/images/projects/imlek.jpg",
+      "/images/projects/Imlek.jpg",
       "/images/projects/purnatugas.jpg",
       "/images/projects/hari.jpg",
       "/images/projects/ramadhan.jpg",
@@ -33,7 +33,14 @@ export default function WorkDetails({ params }) {
       "/images/projects/btn1.jpg",
       "/images/projects/btn2.jpg",
     ],
-    "poster-flyer": ["/images/projects/flyer.jpg"],
+    "poster-flyer": [
+      "/images/projects/flyer-1.jpg",
+      "/images/projects/flyer-2.jpg",
+      "/images/projects/flyer-3.jpg",
+      "/images/projects/flyer-4.jpg",
+      "/images/projects/flyer-5.jpg",
+      "/images/projects/flyer-6.jpg",
+    ],
   }
 
   const galleryImages = (galleries[slug] ?? [project.src]).map(prefixPath)
