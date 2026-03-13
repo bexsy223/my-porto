@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { prefixPath } from '@/utlits/prefixPath'
 import { RiMailSendLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
+import Link from 'next/link'
 
 const Summery = () => {
     return (
@@ -13,7 +14,7 @@ const Summery = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={prefixPath("/images/about/profile.png")} alt="About Me" />
+                                <Image width={400} height={400} sizes="100vw" style={{ width: "100%", height: "auto" }} src={prefixPath("/images/about/irfan2.png")} alt="About Me" />
                             </div>
                         </SlideUp>
                     </div>
@@ -23,12 +24,12 @@ const Summery = () => {
                         <SlideUp>
                             <div className="about-content-part">
                                 <h2>
-                                    I’m Bentos Walker, a product designer.
+                                    I’m Irfan Hafizh, a Ghrapic Designer.
                                 </h2>
-                                <p>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.</p>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                <p>I am Irfan Hafizh Fadhlurrahman, a Graphic Designer based in Jambi City with a focus on print design. I am passionate about creating visual designs that are clear, attractive, and able to communicate messages effectively. I believe that good design is not only about appearance, but also about how a message can be delivered in a strong and memorable way.</p>
+                                <p>I work with tools such as CorelDRAW, Adobe Photoshop, and Canva to create a variety of design materials. Through these tools, I develop visual concepts that are both creative and functional, while paying close attention to layout, color, typography, and overall visual balance. My goal is to produce designs that are visually appealing and easy to understand.</p>
                                 <div className="hero-btns">
-                                    <a href="contact.html" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></a>
+                                    <Link href="/contact" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></Link>
                                 </div>
                             </div>
                         </SlideUp>

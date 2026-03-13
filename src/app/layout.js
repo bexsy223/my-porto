@@ -7,8 +7,8 @@ import Footer from "@/components/sections/footer";
 import { Toaster } from "sonner";
 
 export const metadata = {
-  title: "Bentos - Personal Portfolio Next.js Template",
-  description: "Bentos - Personal Portfolio React Template",
+  title: "Bex - Graphic Designer Portfolio",
+  description: "Personal portfolio of Irfan Hafizh, a graphic designer specializing in print design.",
 };
 
 export default function RootLayout({ children }) {

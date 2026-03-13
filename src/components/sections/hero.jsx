@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { prefixPath } from '@/utlits/prefixPath'
 import Link from 'next/link';
-import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
+import { RiInstagramFill, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
 import PartnersMarquee from './partnersMarquee';
 import SlideUp from '@/utlits/animations/slideUp';
 
@@ -21,10 +21,9 @@ const Hero = () => {
                                 <p>I am a Web Developer and Ghrapic Designer.</p>
                                 <div className="about-social text-center">
                                     <ul>
-                                        <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
-                                        <li><Link href=""><RiTwitterXLine size={20} /></Link></li>
-                                        <li><Link href=""><RiLinkedinFill size={20} /></Link></li>
-                                        <li><Link href=""><RiGithubLine size={20} /></Link></li>
+                                        <li><Link href="https://www.instagram.com/irfan_hafis07?igsh=MXFjbWIwdGhkazB3Zg==" target="_blank"><RiInstagramFill size={20} /></Link></li>
+                                        <li><Link href="https://www.linkedin.com/in/irfan-hafizh-fadhlurrahman-a691922a4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><RiLinkedinFill size={20} /></Link></li>
+                                        <li><Link href="https://github.com/Bexsy223" target="_blank"><RiGithubLine size={20} /></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -37,7 +36,7 @@ const Hero = () => {
                             <div className="about-content-part">
                                 <p>Hello There!</p>
                                 <h2>
-                                   I’m Irfan Hafizh, a graphic designer at a printing company, crafting print-ready visuals with detail-focused precision.
+                                   I’m Irfan Hafizh, a graphic designer who specializes in print design, turning ideas into clean, impactful, and print-ready visuals.
                                 </h2>
                                 <div className="adress-field">
                                     <ul>
@@ -45,7 +44,7 @@ const Hero = () => {
                                     </ul>
                                 </div>
                                 <div className="hero-btns">
-                                    <Link href="/contact" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
+                                    <a href="/CV-Irfan_Hafizh.pdf" download className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </a>
                                 </div>
                             </div>
                         </SlideUp>
